@@ -42,14 +42,6 @@ function Questions() {
     return answer.sort(() => Math.random() - 0.5);
   }
 
-  // const replaceCharacters = (text) => {
-  //   return text
-  //     .replace(/&quot;/g, '"')
-  //     .replace(/&#039;/g, "'")
-  //     .replace(/&amp;/g, "&")
-  //     .replace(/&grave;/g, "`");
-  // };
-
   const decodeEntities = (text) => {
     const parser = new DOMParser();
     return parser.parseFromString(text, "text/html").body.textContent;
