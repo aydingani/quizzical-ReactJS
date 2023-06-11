@@ -7,10 +7,6 @@ function Choices({
   showAnswers,
   correctAnswer,
 }) {
-  // const replaceCharacters = (text) => {
-  //   return text.replace(/&quot;/g, '"').replace(/&#039;/g, "'");
-  // };
-
   const decodeEntities = (text) => {
     const parser = new DOMParser();
     return parser.parseFromString(text, "text/html").body.textContent;
